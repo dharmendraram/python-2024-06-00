@@ -1,19 +1,13 @@
-num1=int(input("Enter num1 is:"))
-num2=int(input("Enter num2 is:"))
-num3=int(input("Enter num3 is:"))
+# WAP to check the among three number to find which is gratest
+num1 = int(input("Enter first number:"))
+num2 = int(input("Enter Second number:"))
+num3 = int(input("Enter Third number:"))
 
-if num1 > num2:
-    if num1 > num3:
-        print(f"{num1} is gratest")
-    else:
-        print(f"{num1} is smallest")
-elif num2 > num1:
-    if num2 > num3:
-        print(f"{num2} is gratest")
-    else:
-        print(f"{num2} is smallest")
-elif num3 > num1:
-    if num3 > num2:
-        print(f"{num3} is gratest")
-    else:
-        print(f"{num3} is smallest")
+if num1 > num2 and num1 > num3:
+    print(f"{num1} is the gretest number")
+
+elif num2 > num1 and num2 > num3:
+    print(f"{num2} is the gretest number")
+
+else:
+    print(f"{num3} is the gretest number")
